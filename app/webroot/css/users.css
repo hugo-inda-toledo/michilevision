@@ -1,0 +1,433 @@
+
+/* REGLAS GENERALES */
+
+table tr td.left_separator { border-left:1px solid #CCC; padding-left:10px;}
+
+form.form_usr {
+ 	background-color:#DDD;
+ 	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:2px solid #CCC;
+	padding:20px;
+}
+
+
+.a_button {
+	color:#FFFFFF;
+	background:#444444;
+	background:-webkit-gradient(linear, left top, left bottom, from(#222222), to(#555555));
+	background-image: -moz-linear-gradient(top, #222222, #555555);
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #444444;
+	padding:6px 10px 6px 10px;
+	margin:0px 6px 0px 0px;
+	text-shadow: #000000 0px 1px 0px;
+	cursor:pointer;
+	display:block;
+}
+
+.a_button:hover {
+	background:#990000;
+	background:-webkit-gradient(linear, left top, left bottom, from(#990000), to(#330000));
+	background-image: -moz-linear-gradient(top, #990000, #330000);
+	text-decoration:none;
+	border:1px solid #660000;
+}
+
+
+.hidden{ display:none;}
+
+
+
+
+/* ************************************************************************** */
+/* ************************************************************************** */
+/* **************  F I R M A S   (G E N E R A L E S)  *********************** */
+/* ************************************************************************** */
+/* ************************************************************************** */
+
+
+div.firmas { width:900px; overflow:auto;}
+
+div.firmas div.sign {
+	background-color:#DDDDDD;
+	margin:0px 3px 0px 0px;
+	padding:10px 8px 10px 8px;
+	width:105px;
+	height:120px;
+	display:block;
+	float:left;
+	font-size:11px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	text-align:center;
+	border:1px solid #999999;
+}
+
+div.firmas div.sign div.approval_link,
+div.firmas div.sign div.approval_action {
+	padding:5px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	margin-bottom:3px;
+}
+
+div.firmas div.sign div.approval_link { background-color:#AAAAAA;}
+div.firmas div.sign div.approval_action { background-color:#333333;}
+
+div.firmas div.sign div.approval_link a,
+div.firmas div.sign div.approval_link span { font-size:11px;}
+div.firmas div.sign div.approval_link a { color:#000000; text-decoration:none;}
+div.firmas div.sign div.approval_link a:hover { color:#FF4400; text-decoration:underline;}
+
+div.firmas div.sign div.approval_action a,
+div.firmas div.sign div.approval_action span { font-size:11px;}
+div.firmas div.sign div.approval_action a { color:#FFFFFF; text-decoration:none;}
+div.firmas div.sign div.approval_action a:hover { text-decoration:underline;}
+
+
+div.firmas div.sign p.fr_date { font-size:9px; margin-top:6px;}
+div.firmas div.sign strong {}
+div.firmas div.sign p.link_alert { color:#990000; padding-left:10px; font-size:11px; text-decoration:none; margin-top:10px;}
+div.firmas div.sign span.link_comments { cursor:pointer; font-size:10px;}
+
+.st_pending { color:#FF6600;}
+.st_approved { color:#006600;}
+.st_rejected { color:#990000;}
+
+
+
+
+
+
+
+/* ************************************************************************** */
+/* ************************************************************************** */
+/* **************  F O N D O S   P O R   R E N D I R  *********************** */
+/* ************************************************************************** */
+/* ************************************************************************** */
+
+
+
+/* 1). Menu Inicio del Sistema ------------------------ */
+
+div#MenuUserSystemsHolder { width:880px; height:260px; margin:20px auto 0px auto;}
+div.MenuUserSystems {
+	width:270px;
+	height:240px;
+	display:block;
+	float:left;
+	background-color:#E9E9E9;
+	border:5px solid #CCCCCC;
+}
+
+div.MenuUserSystems div { width:230px; height:200px; margin-bottom:3px; padding:20px;}
+div.MenuUserSystems div._menu { background-color:#D6D6D6;}
+div.MenuUserSystems div._menu:hover { background-color:#EFEFEF;}
+div.MenuUserSystems div._menu a { height:200px; display:block; overflow:auto; text-decoration:none;}
+
+div.MenuUserSystems div._menu h4 {
+display:block;
+width:128px;
+height:128px;
+text-indent:-99999px;
+margin:20px auto 15px auto;
+}
+
+div.MenuUserSystems h5 { margin-top:0px; text-align:center; color:#333333; font-size:13px;}
+div#_requests div._menu h4 { background: url('../img/sys_new-request.png') no-repeat 0px 0px;}
+div#_listings div._menu h4 { background: url('../img/sys_lists.png') no-repeat 0px 0px;}
+div#_stats div._menu h4 { background: url('../img/sys_stats.png') no-repeat 0px 0px;}
+div#_requests, div#_listings { margin-right:20px;}
+div#_stats { margin-right:0px;}
+
+div.MenuUserSystems div._filters { display:none; background-color:#EFEFEF;}
+div.MenuUserSystems div._filters h5 { margin:10px 0px 15px 0px; text-decoration:underline;}
+div.MenuUserSystems div._filters ul { margin:0px auto 0px auto;}
+div.MenuUserSystems div._filters ul li { margin:0px 0px 3px 0px; text-align:center;}
+div.MenuUserSystems div._filters ul li a { color:#333333;}
+div.MenuUserSystems div._filters ul li a:hover { color:#666666;}
+
+
+
+
+
+
+/* 2). Listados (Index) -------------------------------- */
+
+div#filters_holder {
+	width:930px;
+	height:90px;
+	margin-bottom:20px;
+	background-color:#AAAAAA;
+	padding:10px;
+	border:2px solid #777777;
+}
+
+div#filters_holder h2 { float:left; margin:6px 10px 0px 0px;}
+
+div#filters_holder h2.flt_new {
+	width:170px;
+	background-color:#333333;
+	padding:5px 5px 3px 5px;
+	margin:0px 30px 0px 0px;
+	border-right:1px solid #666666;
+	border-bottom:1px solid #666666;
+}
+
+div#filters_holder h2.flt_new:hover { background-color:#444444;}
+div#filters_holder h2.flt_new a { color:#FFFFFF; display:block; text-decoration:none;}
+div#filters_holder h2.flt_filter {}
+div#filters_holder h2.flt_sort {}
+
+div#filters_holder div.flt_filterGroup_01,
+div#filters_holder div.flt_filterGroup_02 {
+	background-color:#333333;
+	overflow:auto;
+	border:2px solid #777777;
+	float:left;
+	margin:0px 20px 0px 0px;
+	height:90px;
+}
+
+div#filters_holder div.flt_filterGroup_01 { width:160px;}
+div#filters_holder div.flt_filterGroup_02 { width:310px; margin-right:0px;}
+
+div#filters_holder div ul {
+	display:block;
+	float:left;
+	list-style-type:square;
+	padding:5px 0px 5px 0px;
+	margin:0px 20px 0px 0px;
+}
+
+div#filters_holder div ul li { margin-left:20px; padding:1px;}
+div#filters_holder div ul li,
+div#filters_holder div ul li a { color:#FFFFFF;}
+
+div#filters_holder,
+div#filters_holder h2.flt_new,
+div#filters_holder div.flt_filterGroup_01,
+div#filters_holder div.flt_filterGroup_02 {
+	 -moz-border-radius:5px;
+	 -webkit-border-radius:5px;
+	 border-radius:5px;
+}
+
+
+
+div.header { overflow:auto; width:920px;}
+div.header div { float:left; margin:0px 20px 0px 0px; height:18px;}
+div.header div.fr_date { width:80px;}
+div.header div.fr_time { width:60px;}
+div.header div.fr_title { width:300px;}
+div.header div.fr_username { width:200px;}
+	
+div.header div.fr_status {
+	width:90px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #777777;
+	padding:3px 3px 3px 25px;
+	color:#FFFFFF;
+	font-weight:normal;
+}
+
+div.header div.fr_pending { background:url('../img/fr_pending.png') no-repeat 5px 3px #333333;}
+div.header div.fr_approved { background:url('../img/fr_approved.png') no-repeat 5px 3px #333333;}
+div.header div.fr_rejected { background:url('../img/fr_rejected.png') no-repeat 5px 3px #333333;}
+
+
+
+
+div.fr_detail { width:900px; overflow:auto; margin:0px 0px 10px 0px;}
+div.fr_detail div.fr_info { margin:0px 0px 10px 0px; overflow:auto;}
+div.fr_detail table tr td { margin:0px; padding:2px; background:none;}
+
+div.fr_detail div.fr_info div.info_01 { width:340px;}
+div.fr_detail div.fr_info div.info_02 { width:340px;}
+div.fr_detail div.fr_info div.info_03 { width:130px;}
+
+div.fr_detail div.fr_info div.info_01,
+div.fr_detail div.fr_info div.info_02,
+div.fr_detail div.fr_info div.info_03 { float:left;	margin:10px 20px 0px 0px;}
+
+div.fr_detail div.fr_info div.info_01,
+div.fr_detail div.fr_info div.info_02 { background-color:#FFFFCC;}
+
+div.fr_detail div.fr_info div.info_03 { margin-right:0px;}
+div.fr_detail div.fr_info div.info_03 a.a_button { width:100px;}
+div.fr_detail div.fr_info div.info_03 table tr td { border:none;}
+
+div.fr_detail div.reason { background-color:#EEEEEE; width:860px; overflow:auto; margin:0px 0px 20px 0px;}
+div.fr_detail div.reason strong, div.fr_detail div.reason div { float:left;}
+div.fr_detail div.reason strong { width:130px; margin:0px 20px 0px 0px;}
+div.fr_detail div.reason div { width:690px;}
+
+div.fr_detail div.fr_info div.info_01,
+div.fr_detail div.fr_info div.info_02,
+div.fr_detail div.reason {
+	padding:10px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:2px solid #CCCCCC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 3). Formulario nuevo fondo / Vista -------------------------------- */
+
+form#RenderFundAddForm, form#RenderFundViewForm {}
+form#RenderFundAddForm input[type=text], form#RenderFundViewForm input[type=text],
+form#RenderFundAddForm select,
+form#RenderFundAddForm textarea, form#RenderFundViewForm textarea { border:1px solid #999999; padding:3px;}
+form#RenderFundAddForm input[type=text], form#RenderFundViewForm input[type=text] { padding:3px;}
+form#RenderFundAddForm input#RenderFundRenderFundTitle,
+form#RenderFundAddForm input#RenderFundUserId,
+form#RenderFundAddForm input#RenderFundDniUser,
+form#RenderFundAddForm input#RenderFundUsedByName,
+form#RenderFundAddForm input#RenderFundUsedByDni,
+form#RenderFundAddForm input#RenderFundManagementId,
+form#RenderFundViewForm input#RenderFundTitle,
+form#RenderFundViewForm input#RenderFundUser,
+form#RenderFundViewForm input#RenderFundDniUser,
+form#RenderFundViewForm input#RenderFundUsedByName,
+form#RenderFundViewForm input#RenderFundUsedByDni,
+form#RenderFundViewForm input#RenderFundManagement,
+form#RenderFundViewForm input#RenderFundAuthorization { width:250px;}
+form#RenderFundAddForm select#RenderFundBadgeId,
+form#RenderFundViewForm input#RenderFundBadge { width:200px;}
+form#RenderFundAddForm select#RenderFundCostCenterId, 
+form#RenderFundViewForm input#RenderFundCostCenter { width:350px;}
+form#RenderFundAddForm textarea#RenderFundReason,
+form#RenderFundViewForm textarea#RenderFundReason { width:350px; height:90px;}
+
+form#RenderFundAddForm table#detallesFondo tr th,
+form#RenderFundViewForm table#detallesFondo tr th {
+	border:0;
+	text-align:left;
+	padding:4px;
+	background-color:#333;
+	color: #FFF;
+}
+
+form#RenderFundAddForm table#detallesFondo tr td,
+form#RenderFundViewForm table#detallesFondo tr td {
+	border-bottom:1px solid #CCC;
+	padding:5px 0px 5px 0px;
+	margin:0px;
+	background:none;
+}
+
+form#RenderFundAddForm table#detallesFondo tr td label { display:none;}
+form#RenderFundAddForm table#detallesFondo tr td div { padding:0px; margin:0px;}
+form#RenderFundAddForm table#detallesFondo tr td input.f_descripcion { width:670px;}
+form#RenderFundAddForm table#detallesFondo tr td input.f_precio { width:150px;}
+
+
+p.renderFundDate, p.renderFundStatus {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:2px solid #AAAAAA;
+	padding:10px;
+}
+
+p.renderFundDate { background-color: #FEFEEA;}
+p.renderFundStatus { color:#FFFFFF; padding-left:40px;}
+p.renderFundStatusPending { background: url('../img/alert-30x30.png') no-repeat 5px 10px #222222;}
+p.renderFundStatusApproved { background: url('../img/ok-30x30.png') no-repeat 5px 10px #222222;}
+p.renderFundStatusRejected { background: url('../img/error-30x30.png') no-repeat 5px 10px #222222;}
+
+
+form#RenderFundViewForm label { font-weight:bold;}
+.readonly { background-color:#EEEEEE; color:#333333;}
+.redText { font-weight:bold; color:#990000;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************************/
+
+div#_management_quantizer div._menu a { background: url('../img/accounting-management-icon.png') no-repeat 0px 0px;}
+div#_user_quantizer div._menu a { background: url('../img/accounting-user-icon.png') no-repeat 0px 0px;}
+div#_quantizer div._menu a { background: url('../img/accounting-icon.png') no-repeat 0px 0px;}
+div#_help div._menu a { background: url('../img/document-help-icon.png') no-repeat 0px 0px;}
+
+
+/* Encabezado para tablas con registros... */
+.usr_list_headers tr td {
+	border:0px;
+	text-align:left;
+	padding:6px;
+	background-color:#333;
+	color:#CCCCCC;
+}
+
+.usr_list_headers tr td a {
+	color:#FFF;
+	font-weight:bold;
+}
+
+.app_buttons { width:16px; height:16px; border:0px; cursor:pointer; text-indent:-9999px; display:block;}
+.delete_item { background: url('../img/delete.png') no-repeat 0px 0px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

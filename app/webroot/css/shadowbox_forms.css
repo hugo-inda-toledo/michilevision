@@ -1,0 +1,11 @@
+
+body { padding:20px;}
+
+form { border:1px solid #CCCCCC; width:440px;}
+form input[type=password] { width:150px;}
+
+label { font-weight:bold;}
+
+label:after { content:' *'; color:#990000;}
+
+span.asterisk { color:#990000;}

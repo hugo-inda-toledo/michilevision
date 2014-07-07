@@ -1,0 +1,199 @@
+
+
+
+/* *********************** Menú SISTEMAS *********************** */
+
+nav#systems {
+	background:url('../img/menu_systems.png') 0px 0px repeat-x;
+	width:100%;
+	height:35px;
+	border:none;
+	color:#FFFFFF;
+	border-bottom:1px solid #770000;
+}
+
+
+.menu-systems { width:960px; margin:0px auto 0px auto;}
+.menu-systems,.menu-systems ul {
+    list-style-type:none;
+    font-size:11px;
+    margin:0px 0px 0px 0px;
+    padding:0px;
+    clear:both;
+    text-shadow: 1px 1px 1px #000000;
+	z-index:1000;
+}
+
+
+.menu-systems:after { content:' '; display:block; clear:both; width:0px; height:0px;}
+.menu-systems>li,.menu-systems .first-level {
+    position: relative;
+    display: block;
+    float: left;
+    height:35px;
+    border-right:1px solid #770000;
+    background:url('../img/menu_systems.png') repeat-x;
+    background-position:0px -40px;
+}
+
+
+.menu-systems>li a,.menu-systems .first-level a {
+    display: block;
+    text-decoration: none; 
+    color:#555555;
+	padding:11px 10px 11px 10px;
+    font-weight: bold;
+    color:#FFF;
+}
+
+
+.menu-systems>li a:hover,.menu-systems li.first-level a:hover {
+    background:url('../img/menu_systems.png') repeat-x;
+    background-position:0px -80px;
+}
+
+
+.menu-systems>li.active>a
+,.menu-systems li.first-level.active>a
+.menu-systems>li.selected>a
+,.menu-systems li.first-level.selected>a {
+	color:#FFFFFF;
+}	
+
+
+.menu-systems ul,.menu-systems ul.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    width:150%;
+}
+
+.menu-systems>li ul a,.menu-systems .first-level ul a {
+	font-size:11px;
+    border:0px;
+    border-bottom: 1px solid #AAA;
+    padding:10px 10px;
+    color:#FFF;
+    background:#CC2424;
+    opacity:1.0;
+}
+
+.menu-systems>li ul a:hover,.menu-systems .first-level ul a:hover {
+	background:#990000;
+	opacity:1.0;
+}
+
+
+
+
+
+
+
+
+
+/* *********************** Menú ADMINISTRADOR *********************** */
+
+nav#admin {
+	background:url('../img/menu_admin.png') 0px 0px repeat-x;
+	height:26px;
+	border:none;
+	border-bottom:1px solid #CCCCCC;
+	color:#000000;
+}
+
+
+.menu-admin { width:960px; margin:0px auto 0px auto;}
+.menu-admin,.menu-admin ul {
+    list-style-type:none;
+    font-size:11px;
+    margin:0px 0px 0px 0px;
+    padding:0px;
+    clear:both;
+    text-shadow: 1px 1px 1px #999999;
+    z-index:1000;
+}
+
+
+.menu-admin:after { content:' '; display:block; clear:both; width:0px; height:0px;}
+.menu-admin>li,.menu-admin .first-level {
+    position: relative;
+    display: block;
+    float: left;
+    height:25px;
+    border-right:1px solid #333333;
+    border-bottom:1px solid #999999;
+    background:url('../img/menu_admin.png') repeat-x;
+    background-position:0px -25px;
+}
+
+
+.menu-admin>li a,.menu-admin .first-level a {
+    display: block;
+    text-decoration: none; 
+	padding:6px 10px 6px 10px;
+    font-weight: bold;
+    color:#111111;
+}
+
+
+.menu-admin>li a:hover,.menu-admin li.first-level a:hover {
+   background:url('../img/menu_admin.png') repeat-x;
+   background-position:0px -50px;
+   color:#000000;
+}
+
+
+.menu-admin>li.active>a
+,.menu-admin li.first-level.active>a
+.menu-admin>li.selected>a
+,.menu-admin li.first-level.selected>a {
+	color:#000000;
+}	
+
+
+.menu-admin ul,.menu-admin ul.submenu {
+    display:none;
+    position:absolute;
+    left:0;
+    width:150%;
+}
+
+.menu-admin>li ul a,.menu-admin .first-level ul a {
+	font-size:11px;
+    border:0px;
+    border-bottom: 1px solid #AAA;
+    padding:10px 10px;
+    color:#FFF;
+    background:#333333;
+    opacity:1.0;
+    text-shadow:none;
+}
+
+.menu-admin>li ul a:hover,.menu-admin .first-level ul a:hover {
+	background:#111111;
+	opacity:1.0;
+	color:#33FF33;
+}
+
+
+
+.menu-admin li.clearCache {
+	background-image:url('../img/clear-cache.gif');
+	background-repeat:no-repeat;
+	background-color:#330000;
+	background-position:0px 0px;
+	border-right:0px;
+	border-bottom:1px solid #440000;
+	padding-left:12px;
+}
+
+.menu-admin li.clearCache a { background:none; color:#DDDDDD; text-shadow: 1px 1px 1px #000000;}
+.menu-admin li.clearCache a:hover { background:none; color:#FFFFFF;}
+
+
+
+
+
+
+
+

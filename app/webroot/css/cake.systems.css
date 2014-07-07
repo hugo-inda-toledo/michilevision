@@ -1,0 +1,491 @@
+/* Solicitudes en general (FONDOS POR RENDIR / ORDENES DE COMPRA) */
+
+form.form-request {
+ 	background-color:#DDD;
+ 	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:2px solid #CCC;
+	padding:20px;
+	overflow:auto;
+}
+
+form.form-request table tr td,
+form.form-request table tr th { vertical-align:top;}
+form.form-request table tr td { background:none;}
+
+form.form-request input[type=text],
+form.form-request select,
+form.form-request textarea { border:1px solid #999999; padding:3px;}
+form.form-request div.submit { float:right; display:block;}
+
+p.req-date, p.req-status {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:2px solid #AAAAAA;
+	padding:10px;
+}
+
+p.req-date { background-color: #FEFEEA;}
+p.req-status { color:#FFFFFF; padding-left:40px;}
+p.requestStatusPending, p.requestStatusApproved, p.requestStatusRejected { height:30px;}
+p.requestStatusPending { background: url('../img/alert-30x30.png') no-repeat 5px 10px #222222;}
+p.requestStatusApproved { background: url('../img/ok-30x30.png') no-repeat 5px 10px #222222;}
+p.requestStatusRejected { background: url('../img/error-30x30.png') no-repeat 5px 10px #222222;}
+
+a.add-row { float:right; margin-top:20px;}
+div.items-request { background-color:#FFFFFF; padding:6px;}
+td.left_separator { border-left:1px solid #CCC; padding-left:10px;}
+
+
+
+table#detail-request tr th {
+	border:0;
+	text-align:left;
+	padding:4px;
+	background-color:#333333;
+	color:#FFF;
+}
+
+table#detail-request tr td {
+	border-bottom:1px solid #CCCCCC;
+	padding:5px 15px 5px 0px;
+	margin:0px;
+}
+
+table#detail-request tr td label { display:none;}
+table#detail-request tr td div { padding:0px; margin:0px; clear:both;}
+table#detail-request tr td input[type=text],
+table#detail-request tr td select { width:100%;}
+
+
+
+
+/*  Campos nueva solicitud FONDOS POR RENDIR... */
+form#RenderFundAddForm input#RenderFundRenderFundTitle,
+form#RenderFundAddForm input#RenderFundUserId,
+form#RenderFundAddForm input#RenderFundDniUser,    
+form#RenderFundAddForm input#RenderFundUsedByName,
+form#RenderFundAddForm input#RenderFundUsedByDni,
+form#RenderFundAddForm input#RenderFundManagementId { width:250px;}
+form#RenderFundAddForm select#RenderFundBadgeId { width:200px;}
+form#RenderFundAddForm select#RenderFundBadgeId { width:200px;}
+form#RenderFundAddForm select#RenderFundCostCenterId { width:350px;}
+form#RenderFundAddForm textarea#RenderFundReason { width:350px; height:90px;}
+
+
+/*  Campos nueva solicitud ORDEN DE COMPRA... */
+form#PurchaseOrderAddForm input#PurchaseOrderUser,
+form#PurchaseOrderAddForm input#PurchaseOrderDniUser,
+form#PurchaseOrderAddForm input#PurchaseOrderManagementUser,
+form#PurchaseOrderAddForm input#PurchaseOrderDniManagementUser,
+form#PurchaseOrderAddForm input#PurchaseOrderManagement { width:250px;}
+form#PurchaseOrderAddForm select#PurchaseOrderCostCenterId,
+form#PurchaseOrderAddForm select#PurchaseOrderInvoiceTo { width:300px;}
+form#PurchaseOrderAddForm select#PurchaseOrderPurchaseType,
+form#PurchaseOrderAddForm select#PurchaseOrderOnlyProvider,
+form#PurchaseOrderAddForm select#PurchaseOrderBudgeted,
+form#PurchaseOrderAddForm select#PurchaseOrderBadgeId { width:200px;}
+form#PurchaseOrderAddForm textarea#PurchaseOrderReason { width:300px; height:90px;}
+
+form#PurchaseOrderAddForm select#PurchaseOrderInvoiceTo,
+form#PurchaseOrderAddForm a.link_help { float:left;}
+
+form#PurchaseOrderAddForm a.link_help {
+	padding:0px;
+	width:16px;
+	height:16px;
+	text-indent:-99999;
+	margin:0px 0px 40px 10px;
+	display:block;
+}
+
+
+
+/* ****************************************************************************************************** */
+/* Listados (FONDOS POR RENDIR) */
+
+div#filters { height:90px; margin-bottom:20px; background:#AAA; padding:10px; border:2px solid #777;}
+div#filters h2 { float:left; margin:6px 10px 0px 0px;}
+
+div#filters h2.flt_new {
+	width:170px;
+	background-color:#333333;
+	padding:5px 5px 3px 5px;
+	margin:0px 80px 0px 0px;
+	border-right:1px solid #666666;
+	border-bottom:1px solid #666666;
+}
+
+div#filters h2.flt_new:hover { background-color:#444444;}
+div#filters h2.flt_new a { color:#FFFFFF; display:block; text-decoration:none;}
+
+div#filters div.flt_filterGroup_01,
+div#filters div.flt_filterGroup_02 {
+	background-color:#333333;
+	overflow:auto;
+	border:2px solid #777777;
+	float:left;
+	margin:0px 20px 0px 0px;
+	height:90px;
+}
+
+div#filters div.flt_filterGroup_01 { width:180px;}
+div#filters div.flt_filterGroup_02 { width:320px; margin-right:0px;}
+
+div#filters div ul {
+	display:block;
+	float:left;
+	list-style-type:square;
+	padding:5px 0px 5px 0px;
+	margin:0px 20px 0px 0px;
+}
+
+div#filters div ul li { margin-left:20px; padding:1px;}
+div#filters div ul li,
+div#filters div ul li a { color:#FFFFFF;}
+
+div#filters,
+div#filters h2.flt_new,
+div#filters div.flt_filterGroup_01,
+div#filters div.flt_filterGroup_02 { -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+table.reqlist-head { width:1024px;}
+
+
+/* Acordeon para listados */
+div.header { overflow:auto; width:990px;}
+div.header div { float:left; margin:0px 20px 0px 0px; height:18px;}
+div.header div.acc_status {
+	width:90px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #777777;
+	padding:3px 3px 3px 25px;
+	color:#FFFFFF;
+	font-weight:normal;
+}
+
+div.header div.acc_pending { background:url('../img/fr_pending.png') no-repeat 5px 3px #333333;}
+div.header div.acc_approved { background:url('../img/fr_approved.png') no-repeat 5px 3px #333333;}
+div.header div.acc_rejected { background:url('../img/fr_rejected.png') no-repeat 5px 3px #333333;}
+div.header div.acc_invoice { background:url('../img/invoice_icon.png') no-repeat 5px 3px #333333;}
+div.header div.acc_print { background:url('../img/print_icon.png') no-repeat 5px 3px #333333;}
+div.header div.acc_evaluate { background:url('../img/evaluate_icon.png') no-repeat 5px 3px #333333;}
+div.header div.acc_cancel { background:url('../img/cancel_order_icon.png') no-repeat 5px 3px #333333;}
+
+
+
+/* Elementos de acordeon específicos para FONDOS POR RENDIR */
+div.header div.fr_date { width:80px;}
+div.header div.fr_time { width:80px;}
+div.header div.fr_title { width:330px;}
+div.header div.fr_username { width:220px;}
+
+
+/* Elementos de acordeon específicos para ORDENES DE COMPRA */
+div.header div.oc_date { width:80px;}
+div.header div.oc_time { width:80px;}
+div.header div.oc_reason { width:330px;}
+div.header div.oc_username { width:220px;}
+
+
+
+
+/* Interior de cada acordeon desplegado */
+div.acc_detail { width:970px; overflow:auto; margin:0px 0px 10px 0px;}
+div.acc_detail div.fr_info { margin:0px 0px 10px 0px; overflow:auto;}
+div.acc_detail table tr td { margin:0px; padding:2px; background:none;}
+
+div.acc_detail div.fr_info div.info_01 { width:370px;}
+div.acc_detail div.fr_info div.info_02 { width:380px;}
+div.acc_detail div.fr_info div.info_03 { width:130px;}
+
+div.acc_detail div.fr_info div.info_01,
+div.acc_detail div.fr_info div.info_02,
+div.acc_detail div.fr_info div.info_03 { float:left; margin:10px 20px 0px 0px;}
+
+div.acc_detail div.fr_info div.info_01,
+div.acc_detail div.fr_info div.info_02 { background-color:#FFFFCC;}
+
+div.acc_detail div.fr_info div.info_03 { margin-right:0px;}
+div.acc_detail div.fr_info div.info_03 a.a_button { width:100px;}
+div.acc_detail div.fr_info div.info_03 table tr td { border:none;}
+
+div.acc_detail div.reason { background-color:#EEEEEE; width:930px; overflow:auto; margin:0px 0px 20px 0px;}
+div.acc_detail div.reason strong, div.fr_detail div.reason div { float:left;}
+div.acc_detail div.reason strong { margin:0px 20px 0px 0px;}
+div.acc_detail div.reason div { width:690px;}
+
+div.acc_detail div.fr_info div.info_01,
+div.acc_detail div.fr_info div.info_02,
+div.acc_detail div.reason {
+	padding:10px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:2px solid #CCCCCC;
+}
+
+
+
+
+/* Detalle solicitud para FONDOS POR RENDIR */
+form#RenderFundViewForm input#RenderFundTitle,
+form#RenderFundViewForm input#RenderFundUser,
+form#RenderFundViewForm input#RenderFundDniUser,
+form#RenderFundViewForm input#RenderFundUsedByName,
+form#RenderFundViewForm input#RenderFundUsedByDni,
+form#RenderFundViewForm input#RenderFundManagement,
+form#RenderFundViewForm input#RenderFundAuthorization { width:250px;}
+form#RenderFundViewForm input#RenderFundBadge { width:200px;}
+form#RenderFundViewForm input#RenderFundCostCenter { width:350px;}
+form#RenderFundViewForm textarea#RenderFundReason { width:350px; height:90px;}
+form#RenderFundViewForm label,
+form#RenderFundViewForm p.link_ticket { font-weight:bold;}
+
+.readonly { background-color:#EEEEEE; color:#333333;}
+.redText { font-weight:bold; color:#990000;}
+
+
+
+
+
+
+/* ****************************************************************************************************** */
+/* FIRMAS (Para todos los listados y detalles de las solicitudes) */
+
+div.firmas { width:970px; overflow:auto; margin:0px auto 0px auto;}
+
+div.firmas div.sign {
+	width:100px;
+	height:165px;
+	text-align:center;
+	margin:0px 3px 0px 0px;
+	padding:10px 8px 10px 8px;
+	background-color:#DDDDDD;
+	border:1px solid #999999;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	font-size:11px;
+	display:block;
+	float:left;
+}
+
+div.firmas div.sign div.approval_link,
+div.firmas div.sign div.approval_action {
+	padding:5px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	margin-bottom:3px;
+	margin-bottom:5px;
+}
+
+div.firmas div.sign div.approval_link { background-color:#AAAAAA;}
+div.firmas div.sign div.approval_action { background-color:#333333;}
+
+div.firmas div.sign div.approval_link a,
+div.firmas div.sign div.approval_link span,
+div.firmas div.sign div.approval_action a {
+	font-size:11px;
+	width:60px;
+	text-align:left;
+	margin:0px auto 0px auto;
+}
+
+div.firmas div.sign div.approval_link a { color:#000000; text-decoration:none;}
+div.firmas div.sign div.approval_link a:hover { color:#FF4400; text-decoration:underline;}
+
+div.firmas div.sign div.approval_action a,
+div.firmas div.sign div.approval_action span { font-size:11px;}
+div.firmas div.sign div.approval_action a { color:#FFFFFF; text-decoration:none;}
+div.firmas div.sign div.approval_action a:hover { text-decoration:underline;}
+
+div.firmas div.sign p.date-sign { font-size:9px; margin-top:6px;}
+div.firmas div.sign p.link_alert {
+	color:#990000;
+	padding-left:10px;
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	width:95px;
+	margin:10px auto 0px auto;
+}
+
+div.firmas div.sign span.link_comments { margin:0px auto 0px auto; width:60px; cursor:pointer; font-size:10px;}
+
+.st_pending { color:#FF6600;}
+.st_approved { color:#006600;}
+.st_rejected { color:#990000;}
+
+
+
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+
+
+.a_button {
+	color:#FFFFFF;
+	background:#444444;
+	background:-webkit-gradient(linear, left top, left bottom, from(#222222), to(#555555));
+	background-image: -moz-linear-gradient(top, #222222, #555555);
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #444444;
+	padding:6px 10px 6px 10px;
+	margin:0px 6px 0px 0px;
+	text-shadow: #000000 0px 1px 0px;
+	cursor:pointer;
+	display:block;
+}
+
+.a_button:hover {
+	background:#990000;
+	background:-webkit-gradient(linear, left top, left bottom, from(#990000), to(#330000));
+	background-image: -moz-linear-gradient(top, #990000, #330000);
+	text-decoration:none;
+	border:1px solid #660000;
+}
+
+
+.hidden{ display:none;}
+
+
+
+/* 1). Menu Inicio del Sistema ------------------------ */
+
+div#MenuSystems { width:880px; overflow:hidden; margin:20px auto 0px auto;
+	/*background-color:#FF00FF; padding-bottom:5px;*/
+}
+
+div#MenuSystems div._menu {
+	background-color:#E9E9E9;
+	border:5px solid #CCCCCC;
+	display:block;
+	float:left;
+	padding:20px;
+	margin-left:20px;
+}
+
+div#MenuSystems div._menu:hover { background-color:#EFEFEF;}
+div#MenuSystems div._menu:nth-child(1) { margin-left:0px;}
+div#MenuSystems div._menu div._link a { display:block; overflow:auto; text-decoration:none;}
+div#MenuSystems div._menu div._link a h4 {
+	display:block;
+	width:128px;
+	height:128px;
+	text-indent:-99999px;
+	margin:20px auto 15px auto;
+}
+
+div#MenuSystems div._menu div._link a h5 { margin-top:0px;}
+div#MenuSystems div._menu div._link a h5,
+div#MenuSystems div._menu div._filters h5 { text-align:center; color:#333333; font-size:13px;}
+div#MenuSystems div._menu div._filters { display:none;}
+div#MenuSystems div._menu div._filters h5 { margin:10px 0px 15px 0px; text-decoration:underline;}
+div#MenuSystems div._menu div._filters ul { margin:0px auto 0px auto; list-style:square; width:160px;}
+div#MenuSystems div._menu div._filters ul li { margin:0px 0px 10px 0px; text-align:center;}
+div#MenuSystems div._menu div._filters ul li a { color:#333333; text-decoration:none;}
+div#MenuSystems div._menu div._filters ul li a:hover { color:#666666;}
+
+
+
+
+/* Estilos específicos para menú de 3 columnas... */
+div.MenuSystems-3Cols div._menu { width:230px; height:200px;}
+div.MenuSystems-3Cols div._menu div { width:230px; height:200px;}
+div.MenuSystems-3Cols div._menu div._link a { width:100%; height:200px;}
+
+
+/* Estilos específicos para menú de 4 columnas... */
+div.MenuSystems-4Cols div._menu { width:150px; height:210px;}
+div.MenuSystems-4Cols div._menu div { width:150px; height:210px;}
+div.MenuSystems-4Cols div._menu div._link a { width:100%; height:210px;}
+
+
+
+
+/* Estilos específicos para FONDOS POR RENDIR > MENU PRINCIPAL... */
+
+div#fr-requests div a h4 { background: url('../img/sys_new-request.png') no-repeat 0px 0px;}
+div#fr-listings div a h4 { background: url('../img/sys_lists.png') no-repeat 0px 0px;}
+div#fr-stats div a h4 { background: url('../img/sys_stats.png') no-repeat 0px 0px;}
+
+
+/* Estilos específicos para FONDOS POR RENDIR > INFORMES Y ESTADISTICAS... */
+
+div#fr-qtzr div a h4 { background: url('../img/quantizer-icon.png') no-repeat 0px 0px;}
+div#fr-qtzr_management div a h4 { background: url('../img/quantizer-management.png') no-repeat 0px 0px;}
+div#fr-qtzr_user div a h4 { background: url('../img/quantizer-user.png') no-repeat 0px 0px;}
+
+
+/* Estilos específicos para ORDENES DE COMPRA > MENU PRINCIPAL... */
+
+div#oc-requests div a h4 { background: url('../img/sys_new-request.png') no-repeat 0px 0px;}
+div#oc-listings div a h4 { background: url('../img/sys_lists.png') no-repeat 0px 0px;}
+div#oc-stats div a h4 { background: url('../img/sys_stats.png') no-repeat 0px 0px;}
+div#oc-keys div a h4 { background: url('../img/modify-key-icon.png') no-repeat 0px 0px;}
+
+
+/*
+div#_transports div._menu h4 { background: url('../img/sys-tickets-icon.png') no-repeat 0px 0px;}
+div#_requests, div#_listings, div#_transports { margin-right:20px;}
+div#_stats { margin-right:0px;}
+
+
+div#_management_quantizer div._menu a { background: url('../img/accounting-management-icon.png') no-repeat 0px 0px;}
+div#_user_quantizer div._menu a { background: url('../img/accounting-user-icon.png') no-repeat 0px 0px;}
+div#_quantizer div._menu a { background: url('../img/accounting-icon.png') no-repeat 0px 0px;}
+
+div#_help div._menu a { background: url('../img/document-help-icon.png') no-repeat 0px 0px;}
+*/
+
+
+
+
+
+
+
+
+
+/***************************************************/
+/* Encabezado para tablas con registros... */
+.usr_list_headers tr td {
+	border:0px;
+	text-align:left;
+	padding:6px;
+	background-color:#333;
+	color:#CCCCCC;
+}
+
+.usr_list_headers tr td a {
+	color:#FFF;
+	font-weight:bold;
+}
+
+.app_buttons { width:16px; height:16px; border:0px; cursor:pointer; text-indent:-9999px; display:block;}
+.delete_item { background: url('../img/delete.png') no-repeat 0px 0px;}

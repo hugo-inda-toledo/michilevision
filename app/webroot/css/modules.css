@@ -1,0 +1,311 @@
+/* Vista Fichas Generales */
+
+
+div#TitleView { width:940px; overflow:auto;}
+div#TitleView h2 { float:left; width:500px;}
+div#TitleView ul { list-style:none; float:right;}
+div#TitleView ul li { float:left;}
+div#TitleView ul li:first-child { margin-right:20px;}
+
+
+div#TableView { background-color:#EEE; margin-left:auto; margin-right:auto; padding:10px; overflow:auto;}
+div#TableView table { font-size:13px;  width:300px; float:left;}
+div#TableView table tr td,
+div#TableView table tr th { background:none; border-bottom:1px solid #DDD; color:#333; vertical-align:top;}
+div#TableView table tr td { border-bottom:none;}
+div#TableView table tr td table { width:400px; margin-right:20px;}
+div#TableView table tr td table tr th { width:45%; border-bottom:1px solid #DDD;}
+div#TableView table tr td table tr td { width:55%; border-bottom:1px solid #DDD;}
+
+
+
+
+/* Formularios */
+form#UserAddForm, form#UserEditForm,
+form#ManagementAddForm, form#ManagementEditForm,
+form#HeadquarterAddForm, form#HeadquarterEditForm,
+form#CostCenterAddForm, form#CostCenterEditForm, form#CostCenterUserAddForm,
+form#SystemAddForm, form#SystemEditForm,
+form#UserSystemAddForm, form#UserSystemEditForm,
+form#PermissionAddForm, form#PermissionEditForm, form#UserPermissionAddForm,
+form#ProfileAddForm, form#ProfileEditForm,
+form#UserProfileAddForm, form#ProfilePermissionAddForm,
+form#ReplacementAddForm, form#ReplacementEditForm,
+form#CircuitAddForm, form#CircuitEditForm {
+	background-color:#EEE;
+	color:#333;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+
+/* Módulo USUARIOS */
+div#userViewHolder { width:970px;}
+div.userViewHolderRow { width:100%; margin:0px 0px 40px 0px; overflow:auto;}
+div#userViewHolder div.userViewHolderRow h2 { display:block; margin:0px 0px 20px 0px;}
+div#userViewHolder div.userViewHolderRow div#TableView { display:block; float:left;}
+div#userViewHolder div.userViewHolderRow div.personal_info { width:330px; margin-right:20px;}
+div#userViewHolder div.userViewHolderRow div.personal_info table { width:330px;}
+div#userViewHolder div.userViewHolderRow div.personal_info table tr th,
+div#userViewHolder div.userViewHolderRow div.personal_info table tr td { border-bottom:1px solid #CCCCCC;}
+div#userViewHolder div.userViewHolderRow div.personal_info table tr th { width:150px;}
+div#userViewHolder div.userViewHolderRow div.personal_info table tr td { width:180px;}
+div#userViewHolder div.userViewHolderRow div.associated_systems { width:920px;}
+div#userViewHolder div.userViewHolderRow div.associated_systems table { width:920px;}
+div#userViewHolder div.userViewHolderRow div.associated_systems table tr td ul { margin-bottom:10px;}
+div#userViewHolder div.userViewHolderRow div.associated_systems table tr td ul li { margin-bottom:3px;}
+div#userViewHolder div.userViewHolderRow div.associated_systems table tr th,
+div#userViewHolder div.userViewHolderRow div.associated_systems table tr td { border-bottom:1px solid #CCCCCC;}
+div#userViewHolder div.userViewHolderRow div.associated_systems table tr td.td_system { width:300px;}
+div#userViewHolder div.userViewHolderRow div.associated_systems table tr td.td_profile { width:200px;}
+div#userViewHolder div.userViewHolderRow div.associated_systems table tr td.td_costcenter { width:400px;}
+div#userViewHolder div.userViewHolderRow img#thumb_user { padding:2px; border:1px solid #CCCCCC;}
+form#UserAddForm, form#UserEditForm { width:700px;}
+form#UserAddForm, form#UserEditForm table { width:700px;}
+form#UserAddForm table tr td,
+form#UserEditForm table tr td { width:350px; background:none; border:none; vertical-align:top;}
+form#UserAddForm input[type=text] { width:80%;}
+form#UserAddForm select#UserPositionId,
+form#UserAddForm select#UserManagementId,
+form#UserAddForm select#UserHeadquarterId { width: 80%;}
+form#UserAddForm input#UserEmail { width: 80%;}
+form#UserAddForm input#UserDni,
+form#UserAddForm input#UserToken,
+form#UserAddForm input#datepickerUsuario { width: 40%;}
+form#UserAddForm input[type=submit],
+form#UserEditForm input[type=submit] { float:right;}
+form#UserEditForm input[type=text] { width:80%;}
+form#UserEditForm select#UserPositionId,
+form#UserEditForm select#UserManagementId,
+form#UserEditForm select#UserHeadquarterId { width: 80%;}
+form#UserEditForm input#UserEmail { width: 80%;}
+form#UserEditForm input#UserDni,
+form#UserEditForm input#UserToken,
+form#UserEditForm input#datepickerUsuario { width: 40%;}
+
+
+
+/* Módulo GERENCIAS */
+div#ManagementViewHolder { width:970px; background-color:#FF00FF; overflow:auto;}
+form#ManagementAddForm, form#ManagementEditForm { width:700px;}
+form#ManagementAddForm, form#ManagementEditForm table { width:700px;}
+form#ManagementAddForm table tr td,
+form#ManagementEditForm table tr td { width:350px; background:none; border:none; vertical-align:top;}
+form#ManagementAddForm input#ManagementManagementName,
+form#ManagementAddForm select#ManagementUserId { width:90%;}
+form#ManagementAddForm select#ManagementAuthorizationId { width:70%;}
+form#ManagementEditForm input#ManagementManagementName { width:90%;}
+form#ManagementEditForm select#ManagementUserId,
+form#ManagementEditForm select#ManagementAuthorizationId { width:70%;}
+form#ManagementAddForm input[type=submit],
+form#ManagementEditForm input[type=submit] { float:right;}
+
+
+
+/* Módulo JEFATURAS */
+div#HeadquarterViewHolder { width:970px; background-color:#FF00FF; overflow:auto;}
+form#HeadquarterAddForm, form#HeadquarterEditForm { width:700px;}
+form#HeadquarterAddForm, form#HeadquarterEditForm table { width:700px;}
+form#HeadquarterAddForm table tr td,
+form#HeadquarterEditForm table tr td { width:350px; background:none; border:none; vertical-align:top;}
+form#HeadquarterAddForm input#ManagementManagementName,
+form#HeadquarterAddForm select#ManagementUserId { width:90%;}
+form#HeadquarterAddForm select#ManagementAuthorizationId { width:70%;}
+form#HeadquarterEditForm input#ManagementManagementName { width:90%;}
+form#HeadquarterEditForm select#ManagementUserId,
+form#HeadquarterEditForm select#ManagementAuthorizationId { width:70%;}
+form#HeadquarterAddForm input[type=submit],
+form#HeadquarterEditForm input[type=submit] { float:right;}
+
+
+
+/* Módulo CENTROS DE COSTOS */
+div#CostCenterViewHolder { width:970px; background-color:#FF00FF; overflow:auto;}
+form#CostCenterAddForm, form#CostCenterEditForm { width:700px;}
+form#CostCenterAddForm, form#CostCenterEditForm table { width:700px;}
+form#CostCenterAddForm table tr td,
+form#CostCenterEditForm table tr td { width:350px; background:none; border:none; vertical-align:top;}
+form#CostCenterAddForm input#CostCenterCostCenterName,
+form#CostCenterAddForm select#CostCenterManagementId  { width:95%;}
+form#CostCenterAddForm input#CostCenterCostCenterCode { width:45%;}
+form#CostCenterAddForm select#CostCenterLevel,
+form#CostCenterAddForm select#CostCenterValid { width:20%;}
+form#CostCenterEditForm input#CostCenterCostCenterName,
+form#CostCenterEditForm select#CostCenterManagementId { width:95%;}
+form#CostCenterEditForm input#CostCenterCostCenterCode { width:45%;}
+form#CostCenterEditForm select#CostCenterLevel,
+form#CostCenterEditForm select#CostCenterValid { width:20%;}
+form#CostCenterAddForm input[type=submit],
+form#CostCenterEditForm input[type=submit] { float:right;}
+
+
+
+/* Módulo ASIGNACION CENTROS DE COSTOS A USUARIOS */
+div#CostCenterUserViewHolder { width:970px; background-color:#FF00FF; overflow:auto;}
+form#CostCenterUserAddForm { width:700px;}
+form#CostCenterUserAddForm table tr td { width:350px; background:none; border:none; vertical-align:top;}
+form#CostCenterUserAddForm select#SelectUsuario,
+form#CostCenterUserAddForm select#SelectSistema { width:90%;}
+form#CostCenterUserAddForm select#CostCenterUserCostCenterId { width:95%; height:150px;}
+form#CostCenterUserAddForm input[type=submit] { float:right;}
+
+
+
+/* Módulo SISTEMAS */
+div#SystemViewHolder { width:970px; background-color:#FF00FF; overflow:auto;}
+form#SystemAddForm, form#SystemEditForm { width:700px;}
+form#SystemAddForm, form#SystemEditForm table { width:700px;}
+form#SystemAddForm table tr td,
+form#SystemEditForm table tr td { width:350px; background:none; border:none; vertical-align:top;}
+form#SystemAddForm input#SystemSystemName { width:95%;}
+form#SystemAddForm textarea#SystemSystemDescription { width:95%; height:100px;}
+form#SystemAddForm input#SystemUrl { width:95%;}
+form#SystemEditForm input#SystemSystemName { width:95%;}
+form#SystemEditForm textarea#SystemSystemDescription { width:95%; height:100px;}
+form#SystemEditForm input#SystemUrl { width:95%;}
+form#SystemAddForm input[type=submit],
+form#SystemEditForm input[type=submit] { float:right;}
+
+
+
+/* Módulo ASIGNACION SISTEMAS A USUARIOS */
+div#UserSystemViewHolder { width:970px; background-color:#FF00FF; overflow:auto;}
+form#UserSystemAddForm, form#UserSystemEditForm { width:700px;}
+form#UserSystemAddForm, form#UserSystemEditForm table { width:700px;}
+form#UserSystemAddForm table tr td,
+form#UserSystemEditForm table tr td { width:350px; background:none; border:none; vertical-align:top;}
+form#UserSystemAddForm select#UserSystemSystemId,
+form#UserSystemAddForm select#UserSystemUserId { width:90%;}
+form#UserSystemEditForm select#UserSystemSystemId,
+form#UserSystemEditForm select#UserSystemUserId { width:90%;}
+form#UserSystemAddForm input[type=submit],
+form#UserSystemEditForm input[type=submit] { float:right;}
+
+
+
+/* Módulo PERMISOS */
+div#PermissionsViewHolder { width:970px; background-color:#FF00FF; overflow:auto;}
+form#PermissionAddForm, form#PermissionEditForm { width:700px;}
+form#PermissionAddForm, form#PermissionEditForm table { width:700px;}
+form#PermissionAddForm table tr td,
+form#PermissionEditForm table tr td { width:350px; background:none; border:none; vertical-align:top;}
+form#PermissionAddForm input#PermissionTypePermission,
+form#PermissionAddForm select#PermissionSystemId { width:95%;}
+form#PermissionAddForm textarea#PermissionDescription { width:95%; height:100px;}
+form#PermissionAddForm select#PermissionLevel { width:20%;}
+form#PermissionEditForm input#PermissionTypePermission,
+form#PermissionEditForm select#PermissionSystemId { width:70%;}
+form#PermissionEditForm textarea#PermissionDescription { width:95%; height:100px;}
+form#PermissionEditForm select#PermissionLevel { width:20%;}
+form#PermissionAddForm input[type=submit],
+form#PermissionEditForm input[type=submit] { float:right;}
+
+
+
+/* Módulo ASIGNACION PERMISOS TEMPORALES A USUARIOS */
+div#UserPermissionsViewHolder { width:970px; background-color:#FF00FF; overflow:auto;}
+form#UserPermissionAddForm { width:700px;}
+form#UserPermissionAddForm table { width:700px;}
+form#UserPermissionAddForm table tr td { width:350px; background:none; border:none; vertical-align:top;}
+form#UserPermissionAddForm select#select_usuarios,
+form#UserPermissionAddForm select#SelectSistema { width:90%;}
+form#UserPermissionAddForm select#SelectPermiso,
+form#UserPermissionAddForm input#datepicker-desde,
+form#UserPermissionAddForm input#datepicker-hasta { width:40%;}
+form#UserPermissionAddForm input[type=submit] { float:right;}
+div#permisos, div#permisos2 { padding:0px;}
+
+
+
+/* Módulo PERFILES */
+div#ProfilesViewHolder { width:970px; background-color:#FF00FF; overflow:auto;}
+form#ProfileAddForm, form#ProfileEditForm { width:700px;}
+form#ProfileAddForm, form#ProfileEditForm table { width:700px;}
+form#ProfileAddForm table tr td,
+form#ProfileEditForm table tr td { width:350px; background:none; border:none; vertical-align:top;}
+form#ProfileAddForm input#ProfileProfileName,
+form#ProfileAddForm select#ProfileSystemId { width:90%;}
+form#ProfileAddForm textarea#ProfileDescription { width:95%; height:100px;}
+form#ProfileEditForm input#ProfileProfileName,
+form#ProfileEditForm select#ProfileSystemId { width:90%;}
+form#ProfileEditForm textarea#ProfileDescription { width:95%; height:100px;}
+form#ProfileAddForm input[type=submit],
+form#ProfileEditForm input[type=submit] { float:right;}
+
+
+
+/* Módulo ASIGNACION PERFILES A USUARIOS */
+div#UserProfilesViewHolder { width:970px; background-color:#FF00FF; overflow:auto;}
+form#UserProfileAddForm { width:700px;}
+form#UserProfileAddForm table { width:700px;}
+form#UserProfileAddForm table tr td { width:350px; background:none; border:none; vertical-align:top;}
+form#UserProfileAddForm select#SelectUsuario,
+form#UserProfileAddForm select#SelectSistema { width:90%;}
+form#UserProfileAddForm select#SelectProfile { width:95%; height:80px;}
+form#UserProfileAddForm input[type=submit] { float:right;}
+
+
+
+/* Módulo ASIGNACION PERMISOS A PERFILES */
+div#ProfilePermissionViewHolder { width:970px; background-color:#FF00FF; overflow:auto;}
+form#ProfilePermissionAddForm { width:700px;}
+form#ProfilePermissionAddForm table { width:700px;}
+form#ProfilePermissionAddForm table tr td { width:350px; background:none; border:none; vertical-align:top;}
+form#ProfilePermissionAddForm select#SelectSistema,
+form#ProfilePermissionAddForm select#SelectProfile { width:90%;}
+form#ProfilePermissionAddForm select#ProfilePermissionPermissionId { width:95%; height:120px;}
+form#ProfilePermissionAddForm input[type=submit] { float:right;}
+div#sistemas, div#profiles, div#segundoSelect { padding:0px;}
+
+
+
+/* Módulo REEMPLAZOS */
+div#ReplacementViewHolder { width:970px; background-color:#FF00FF; overflow:auto;}
+form#ReplacementAddForm { width:700px;}
+form#ReplacementAddForm table { width:700px;}
+form#ReplacementAddForm table tr td { width:350px; background:none; border:none; vertical-align:top;}
+form#ReplacementAddForm select#SelectUsuarioReemplazado,
+form#ReplacementAddForm select#ReplacementReplacingUserId,
+form#ReplacementAddForm select#ReplacementTypeReplacementId,
+form#ReplacementAddForm select#ReplacementManagementId { width:90%;}
+form#ReplacementAddForm input#datepicker-desde,
+form#ReplacementAddForm input#datepicker-hasta { width:40%;}
+form#ReplacementAddForm input[type=submit] { float:right;}
+div#segundoSelect { padding:0px;}
+
+
+
+/* Módulo CIRCUITOS */
+div#CircuitViewHolder { width:970px; background-color:#FF00FF; overflow:auto;}
+form#CircuitAddForm, form#CircuitEditForm { width:700px;}
+form#CircuitAddForm, form#CircuitEditForm table { width:700px;}
+form#CircuitAddForm table tr td,
+form#CircuitEditForm table tr td { width:350px; background:none; border:none; vertical-align:top;}
+form#CircuitAddForm select#CircuitUserId,
+form#CircuitAddForm select#CircuitSystemId { width:90%;}
+form#CircuitAddForm select#CircuitAuthorizationId { width:60%;}
+form#CircuitAddForm select#CircuitLevel { width:20%;}
+form#CircuitEditForm select#CircuitUserId,
+form#CircuitEditForm select#CircuitSystemId { width:90%;}
+form#CircuitEditForm select#CircuitAuthorizationId { width:60%;}
+form#CircuitEditForm select#CircuitLevel { width:20%;}
+form#CircuitAddForm input[type=submit],
+form#CircuitEditForm input[type=submit] { float:right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
